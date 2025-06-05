@@ -15,9 +15,10 @@ https://render.com/
 
 無料枠でok
 
-起動コマンド
-
-
+Start Commandの欄に
+```
+python bot.py
+```
 に設定
 
 トークンを入力
@@ -27,4 +28,16 @@ https://render.com/
 ## GASに登録
 Google Apps scriptを検索
 
-コードは調べてください
+コードは
+```
+function keepBotAlive() {
+    var url = "あなたのbot URL（Render）"; 
+    var options = {
+        "method": "get",
+        "muteHttpExceptions": true
+    };
+    
+    try {
+        var response = UrlFetchApp.fetch(url, options);
+        Logger.log("Ping sent: " + response.getResponseCode());
+```
