@@ -1,4 +1,4 @@
-# tomatobot_Source-co# Discord Bot
+# Discord Bot
 
 ## 使い方
 
